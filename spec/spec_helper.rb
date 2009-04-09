@@ -6,18 +6,11 @@ rescue LoadError
   require 'spec'
 end
 
-# require 'rubygems'
-# $:.unshift(File.dirname(__FILE__) + '/../lib')
 require 'rdb4o'
 
-
-# require File.dirname(__FILE__) + '/java/models.jar'
-
-# def d(*attrs)
-#   attrs.each {|a| puts a.inspect }
-# end
-
-
+def d(*attrs)
+  attrs.each {|a| puts a.inspect }
+end
 
 Spec::Runner.configure do |config|  
   config.before(:all) do

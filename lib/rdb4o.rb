@@ -5,13 +5,13 @@ include Java
 $CLASSPATH << "#{File.dirname(__FILE__)}/java"
 
 begin
-   require 'java/db4o.jar'
+  require 'java/db4o.jar'
 rescue LoadError
-   begin 
-      require ENV['DB4O_JAR'].to_s
-   rescue LoadError
-      raise "Rdb4o ERROR: Could not find db4objects library, put it in my lib/java dir, or try setting environment variable DB4O_JAR to db4objects jar location (You can get it at www.db4o.com)" 
-   end
+  begin 
+    require ENV['DB4O_JAR'].to_s
+  rescue LoadError
+    raise "Rdb4o ERROR: Could not find db4objects library, put it in my lib/java dir, or try setting environment variable DB4O_JAR to db4objects jar location (You can get it at www.db4o.com)" 
+  end
 end
 
 # Rdb4o
@@ -26,7 +26,6 @@ module Rdb4o
   end  
   
 end
-
 
 require 'rdb4o/database'
 require 'rdb4o/model'
