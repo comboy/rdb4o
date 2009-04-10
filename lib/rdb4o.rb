@@ -1,4 +1,3 @@
-
 $: << File.dirname(__FILE__)
 
 include Java
