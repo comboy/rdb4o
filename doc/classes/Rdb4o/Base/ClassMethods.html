@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html 
+     PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>Module: Rdb4o::Base::ClassMethods</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+  <meta http-equiv="Content-Script-Type" content="text/javascript" />
+  <link rel="stylesheet" href="../../.././rdoc-style.css" type="text/css" media="screen" />
+  <script type="text/javascript">
+  // <![CDATA[
+
+  function popupCode( url ) {
+    window.open(url, "Code", "resizable=yes,scrollbars=yes,toolbar=no,status=no,height=150,width=400")
+  }
+
+  function toggleCode( id ) {
+    if ( document.getElementById )
+      elem = document.getElementById( id );
+    else if ( document.all )
+      elem = eval( "document.all." + id );
+    else
+      return false;
+
+    elemStyle = elem.style;
+    
+    if ( elemStyle.display != "block" ) {
+      elemStyle.display = "block"
+    } else {
+      elemStyle.display = "none"
+    }
+
+    return true;
+  }
+  
+  // Make codeblocks hidden by default
+  document.writeln( "<style type=\"text/css\">div.method-source-code { display: none }</style>" )
+  
+  // ]]>
+  </script>
+
+</head>
+<body>
+
+
+
+    <div id="classHeader">
+        <table class="header-table">
+        <tr class="top-aligned-row">
+          <td><strong>Module</strong></td>
+          <td class="class-name-in-header">Rdb4o::Base::ClassMethods</td>
+        </tr>
+        <tr class="top-aligned-row">
+            <td><strong>In:</strong></td>
+            <td>
+                <a href="../../../files/lib/rdb4o_rb.html">
+                lib/rdb4o.rb
+                </a>
+        <br />
+            </td>
+        </tr>
+
+        </table>
+    </div>
+  <!-- banner header -->
+
+  <div id="bodyContent">
+
+
+
+  <div id="contextContent">
+
+
+
+   </div>
+
+    <div id="method-list">
+      <h3 class="section-bar">Methods</h3>
+
+      <div class="name-list">
+      <a href="#M000021">add_validation_to_chain</a>&nbsp;&nbsp;
+      <a href="#M000010">create</a>&nbsp;&nbsp;
+      <a href="#M000012">find</a>&nbsp;&nbsp;
+      <a href="#M000011">find_all</a>&nbsp;&nbsp;
+      <a href="#M000013">find_soda</a>&nbsp;&nbsp;
+      <a href="#M000014">find_with</a>&nbsp;&nbsp;
+      <a href="#M000015">get_by_db4o_id</a>&nbsp;&nbsp;
+      <a href="#M000017">human_attrbute_name</a>&nbsp;&nbsp;
+      <a href="#M000016">method_missing</a>&nbsp;&nbsp;
+      <a href="#M000019">validates_presence_of</a>&nbsp;&nbsp;
+      <a href="#M000020">validates_uniqueness_of</a>&nbsp;&nbsp;
+      <a href="#M000018">validation_methods</a>&nbsp;&nbsp;
+      </div>
+    </div>
+
+  </div>
+
+
+    <!-- if includes -->
+
+    <div id="section">
+
+
+
+
+
+      
+
+
+    <!-- if method_list -->
+    <div id="methods">
+      <h3 class="section-bar">Public Instance methods</h3>
+
+      <div id="method-M000021" class="method-detail">
+        <a name="M000021"></a>
+
+        <div class="method-heading">
+          <a href="ClassMethods.src/M000021.html" target="Code" class="method-signature"
+            onclick="popupCode('ClassMethods.src/M000021.html');return false;">
+          <span class="method-name">add_validation_to_chain</span><span class="method-args">(&amp;block)</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+        </div>
+      </div>
+
+      <div id="method-M000010" class="method-detail">
+        <a name="M000010"></a>
+
+        <div class="method-heading">
+          <a href="ClassMethods.src/M000010.html" target="Code" class="method-signature"
+            onclick="popupCode('ClassMethods.src/M000010.html');return false;">
+          <span class="method-name">create</span><span class="method-args">(attributes)</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Creates a new object with given attributes and saves it to databse
+</p>
+        </div>
+      </div>
+
+      <div id="method-M000012" class="method-detail">
+        <a name="M000012"></a>
+
+        <div class="method-heading">
+          <a href="ClassMethods.src/M000012.html" target="Code" class="method-signature"
+            onclick="popupCode('ClassMethods.src/M000012.html');return false;">
+          <span class="method-name">find</span><span class="method-args">(&amp;proc)</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Native query <a href="ClassMethods.html#M000012">find</a>
+</p>
+        </div>
+      </div>
+
+      <div id="method-M000011" class="method-detail">
+        <a name="M000011"></a>
+
+        <div class="method-heading">
+          <a href="ClassMethods.src/M000011.html" target="Code" class="method-signature"
+            onclick="popupCode('ClassMethods.src/M000011.html');return false;">
+          <span class="method-name">find_all</span><span class="method-args">()</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Find all objects from database of a given class
+</p>
+        </div>
+      </div>
+
+      <div id="method-M000013" class="method-detail">
+        <a name="M000013"></a>
+
+        <div class="method-heading">
+          <a href="ClassMethods.src/M000013.html" target="Code" class="method-signature"
+            onclick="popupCode('ClassMethods.src/M000013.html');return false;">
+          <span class="method-name">find_soda</span><span class="method-args">(&amp;proc)</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+SODA <a href="ClassMethods.html#M000012">find</a>
+</p>
+        </div>
+      </div>
+
+      <div id="method-M000014" class="method-detail">
+        <a name="M000014"></a>
+
+        <div class="method-heading">
+          <a href="ClassMethods.src/M000014.html" target="Code" class="method-signature"
+            onclick="popupCode('ClassMethods.src/M000014.html');return false;">
+          <span class="method-name">find_with</span><span class="method-args">(attributes)</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Find objects with given attributes.
+</p>
+        </div>
+      </div>
+
+      <div id="method-M000015" class="method-detail">
+        <a name="M000015"></a>
+
+        <div class="method-heading">
+          <a href="ClassMethods.src/M000015.html" target="Code" class="method-signature"
+            onclick="popupCode('ClassMethods.src/M000015.html');return false;">
+          <span class="method-name">get_by_db4o_id</span><span class="method-args">(id)</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Get object byt db4o internal id (not UUID !)
+</p>
+        </div>
+      </div>
+
+      <div id="method-M000017" class="method-detail">
+        <a name="M000017"></a>
+
+        <div class="method-heading">
+          <a href="ClassMethods.src/M000017.html" target="Code" class="method-signature"
+            onclick="popupCode('ClassMethods.src/M000017.html');return false;">
+          <span class="method-name">human_attrbute_name</span><span class="method-args">(attr)</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+        </div>
+      </div>
+
+      <div id="method-M000016" class="method-detail">
+        <a name="M000016"></a>
+
+        <div class="method-heading">
+          <a href="ClassMethods.src/M000016.html" target="Code" class="method-signature"
+            onclick="popupCode('ClassMethods.src/M000016.html');return false;">
+          <span class="method-name">method_missing</span><span class="method-args">(name, *args)</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Method missing provides dynamic finders. For example, to <a
+href="ClassMethods.html#M000012">find</a> all objects with property
+&quot;name&quot; set to &quot;blah&quot; you can just type
+Yourclass.find_by_name &quot;blah&quot;
+</p>
+        </div>
+      </div>
+
+      <div id="method-M000019" class="method-detail">
+        <a name="M000019"></a>
+
+        <div class="method-heading">
+          <a href="ClassMethods.src/M000019.html" target="Code" class="method-signature"
+            onclick="popupCode('ClassMethods.src/M000019.html');return false;">
+          <span class="method-name">validates_presence_of</span><span class="method-args">(*attr_names)</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+        </div>
+      </div>
+
+      <div id="method-M000020" class="method-detail">
+        <a name="M000020"></a>
+
+        <div class="method-heading">
+          <a href="ClassMethods.src/M000020.html" target="Code" class="method-signature"
+            onclick="popupCode('ClassMethods.src/M000020.html');return false;">
+          <span class="method-name">validates_uniqueness_of</span><span class="method-args">(*attr_names)</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+        </div>
+      </div>
+
+      <div id="method-M000018" class="method-detail">
+        <a name="M000018"></a>
+
+        <div class="method-heading">
+          <a href="ClassMethods.src/M000018.html" target="Code" class="method-signature"
+            onclick="popupCode('ClassMethods.src/M000018.html');return false;">
+          <span class="method-name">validation_methods</span><span class="method-args">()</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Validations
+</p>
+        </div>
+      </div>
+
+
+    </div>
+
+
+  </div>
+
+
+<div id="validator-badges">
+  <p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+</div>
+
+</body>
+</html>
