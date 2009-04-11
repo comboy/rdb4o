@@ -357,6 +357,7 @@ module Rdb4o
          if config[:type] == 'remote'
            @databases[name] = Db4o.open_client('localhost',config[:port].to_i,config[:login],config[:password])
          else
+	   raise "No :dbfile option provided and connection type is set to local." unless config[:dbfile]
            @databases[name] = Db4o.open_file config[:dbfile]
          end
       end
